@@ -1,4 +1,4 @@
-package strings.easy;
+package easy;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;
