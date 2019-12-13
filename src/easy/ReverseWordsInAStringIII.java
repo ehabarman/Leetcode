@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 
 public class ReverseWordsInAStringIII {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         System.out.println(reverseWords(s.nextLine()));
     }
