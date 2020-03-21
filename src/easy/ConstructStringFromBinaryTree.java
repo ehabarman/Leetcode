@@ -1,5 +1,7 @@
 package easy;
 
+import common.TreeNode;
+
 public class ConstructStringFromBinaryTree {
     public String tree2str(TreeNode t) {
         if (t == null) return "";
@@ -15,13 +17,5 @@ public class ConstructStringFromBinaryTree {
         return result + "(" + left + ")" + "(" + right + ")";
     }
 
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
 
-        TreeNode(int x) {
-            val = x;
-        }
-    }
 }

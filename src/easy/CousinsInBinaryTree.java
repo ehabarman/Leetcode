@@ -1,5 +1,7 @@
 package easy;
 
+import common.TreeNode;
+
 public class CousinsInBinaryTree {
     TreeNode xParent = null;
     TreeNode yParent = null;
@@ -25,13 +27,4 @@ public class CousinsInBinaryTree {
         getDepthAndParent(root.right, x, y, depth + 1, root);
     }
 
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
 }

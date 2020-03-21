@@ -1,5 +1,7 @@
 package easy;
 
+import common.TreeNode;
+
 public class InvertBinaryTree {
     public TreeNode invertTree(TreeNode root) {
         if(root == null)
@@ -10,15 +12,5 @@ public class InvertBinaryTree {
         root.right = left;
         return root;
 
-    }
-
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
     }
 }

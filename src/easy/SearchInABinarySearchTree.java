@@ -1,5 +1,7 @@
 package easy;
 
+import common.TreeNode;
+
 public class SearchInABinarySearchTree {
     public TreeNode searchBST(TreeNode root, int val) {
         if( root == null)
@@ -12,13 +14,5 @@ public class SearchInABinarySearchTree {
         else
             return searchBST(root.left, val);
     }
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
 
-        TreeNode(int x) {
-            val = x;
-        }
-    }
 }

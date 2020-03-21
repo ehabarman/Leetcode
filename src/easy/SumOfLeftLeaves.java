@@ -1,5 +1,7 @@
 package easy;
 
+import common.TreeNode;
+
 public class SumOfLeftLeaves {
     public int sumOfLeftLeaves(TreeNode root) {
         int sum = 0;
@@ -13,13 +15,5 @@ public class SumOfLeftLeaves {
     }
 
 
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
 
-        TreeNode(int x) {
-            val = x;
-        }
-    }
 }

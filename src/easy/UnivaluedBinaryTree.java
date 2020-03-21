@@ -1,5 +1,7 @@
 package easy;
 
+import common.TreeNode;
+
 public class UnivaluedBinaryTree {
     public boolean isUnivalTree(TreeNode r) {
         return dfs(r, r.val);
@@ -9,13 +11,5 @@ public class UnivaluedBinaryTree {
         return r == null || (r.val == v && dfs(r.left, v) && dfs(r.right, v));
     }
 
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
 
-        TreeNode(int x) {
-            val = x;
-        }
-    }
 }

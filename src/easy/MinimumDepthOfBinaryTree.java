@@ -1,5 +1,7 @@
 package easy;
 
+import common.TreeNode;
+
 public class MinimumDepthOfBinaryTree {
 
     public int minDepth(TreeNode root) {
@@ -18,13 +20,4 @@ public class MinimumDepthOfBinaryTree {
         return Math.min(minDepth(root.right), minDepth(root.left));
     }
 
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
 }

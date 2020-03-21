@@ -1,5 +1,7 @@
 package easy;
 
+import common.TreeNode;
+
 public class LongestUnivaluePath {
     int max = 1;
 
@@ -17,13 +19,4 @@ public class LongestUnivaluePath {
         return root.val == parent ? Math.max(left, right) + 1 : 0;
     }
 
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
 }

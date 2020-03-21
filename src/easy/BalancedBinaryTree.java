@@ -1,5 +1,7 @@
 package easy;
 
+import common.TreeNode;
+
 public class BalancedBinaryTree {
     public boolean isBalanced(TreeNode root) {
         return height(root) == -1? false : true;
@@ -16,15 +18,5 @@ public class BalancedBinaryTree {
             return -1;
         return Math.max(left, right) + 1;
 
-    }
-
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
     }
 }

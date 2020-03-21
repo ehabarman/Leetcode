@@ -1,5 +1,7 @@
 package easy;
 
+import common.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,14 +23,5 @@ public class BinaryTreePaths {
 
         return paths;
     }
-
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
+    
 }

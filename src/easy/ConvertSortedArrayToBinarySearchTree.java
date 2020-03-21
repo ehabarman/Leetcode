@@ -1,5 +1,7 @@
 package easy;
 
+import common.TreeNode;
+
 public class ConvertSortedArrayToBinarySearchTree {
     public TreeNode sortedArrayToBST(int[] nums) {
         return sortedArrayToBSTRecursion(nums, 0, nums.length - 1);
@@ -15,24 +17,14 @@ public class ConvertSortedArrayToBinarySearchTree {
     }
 
     /**
-     * def sortedArrayToBST(self, nums: List[int]) -> TreeNode:
+     * def sortedArrayToBST(self, nums: List[int]) -> common.TreeNode:
      *         if len(nums) == 0:
      *             return None
      *         mid = (len(nums)-1)//2
-     *         root = TreeNode(nums[mid])
+     *         root = common.TreeNode(nums[mid])
      *         root.left = self.sortedArrayToBST(nums[:mid])
      *         root.right = self.sortedArrayToBST(nums[mid+1:])
      *         return root
      */
-
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
 
 }
