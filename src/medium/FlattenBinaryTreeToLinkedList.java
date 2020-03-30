@@ -4,29 +4,19 @@ import common.TreeNode;
 
 public class FlattenBinaryTreeToLinkedList {
 
-	public static TreeNode solution(TreeNode node) {
-		if (node == null) {
-			return null;
-		}
-
-		if (node.left == null && node.right == null) {
+	public static TreeNode flatten(TreeNode node) {
+		if(node == null)
 			return node;
-		}
 
-		TreeNode right = solution(node.right);
-		TreeNode left = solution(node.left);
+		TreeNode left =  flatten(node.left);
+		TreeNode right = flatten(node.right);
 
-		if (left == null) {
-			return right;
-		} else if (right == null) {
-			node.right = node.left;
-			node.left = null;
-			return left;
-		} else {
+		if(left  != null)
 			left.right = node.right;
+
+		if(right != null)
 			node.right = node.left;
-			node.left = null;
-			return right;
-		}
+
+		return right != null ? right : left;
 	}
 }
