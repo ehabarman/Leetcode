@@ -1,10 +1,12 @@
 package easy;
 
+import common.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class TwoSumIV {
-    public boolean findTarget(BinaryTreeTilt.TreeNode root, int k) {
+    public boolean findTarget(TreeNode root, int k) {
         List< Integer > list = new ArrayList();
         inorder(root, list);
         int l = 0, r = list.size() - 1;
@@ -19,7 +21,7 @@ public class TwoSumIV {
         }
         return false;
     }
-    public void inorder(BinaryTreeTilt.TreeNode root, List < Integer > list) {
+    public void inorder(TreeNode root, List < Integer > list) {
         if (root == null)
             return;
         inorder(root.left, list);
