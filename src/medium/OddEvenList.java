@@ -2,7 +2,7 @@ package medium;
 
 import common.ListNode;
 
-public class oddEvenList {
+public class OddEvenList {
     public ListNode oddEvenList(ListNode head) {
         if (head == null) return null;
         ListNode odd = head, even = head.next, evenHead = even;
